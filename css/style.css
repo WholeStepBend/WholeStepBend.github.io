@@ -254,10 +254,10 @@ header h1 {
 
 header h1 a {
 	display: block;
-	background: url(../images/WC_logo2.png) 0 0 no-repeat;
+	background: url(../images/WC_logo3.png) 0 0 no-repeat;
 	overflow: hidden;
 	text-indent: -999px;
-	width: 225px;
+	width: 235px;
 	height: 35px;	
 	margin-top:3px;
 }
