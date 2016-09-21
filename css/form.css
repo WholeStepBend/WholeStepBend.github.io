@@ -1,5 +1,67 @@
 /****Form****/
+.btn {
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.4285;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.btn-primary {
+	color: #ffffff;
+	background-color: #428bca;
+	border-color: #357ebd;
+}
+.btn-primary {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+button, html input[type='button'], input[type='reset'], input[type='submit'] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+.form-control {
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.4285;
+	color: #555555;
+	background-color:#ffffff;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0px 2px 2px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+textarea.form-control {
+	height: auto;
+	width: 574px;
+	overflow: auto;
+}
+.form-control:focus {
+	border-color: #ffffff;
+	outline:0;
+	color: black;
+	-webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,.075), 0 0 8px #ffffff;
+	box-shadow: inset 0px 2px 2px rgba(0,0,0,0.075), 0px 0px 8px #ffffff;
+}
 
+/*//////////*/
 #form {
 	padding-top: 8px;
 }
@@ -14,16 +76,40 @@
 	float:left;
 	font-family: Arial, Helvetica, sans-serif;
 }
-#homepage_input textarea{
-border: 1px solid #dadada;
-	font-size:14px;
-	color:#978e7c;
-	height: 224px;
-	outline: medium none;
-	overflow: auto;
+#home textarea{
 	width: 574px;
-	font-family: Arial, Helvetica, sans-serif;
 
+}
+#upload_type{
+	padding: 100px 0 30px 0;
+	text-align:center;	
+	font-family: Bitter, serif;
+	color:#ffffff;
+}
+#upload_type li{
+	display:inline-block;
+	width:60px;
+	color:#ffffff;
+	text-align:center;
+}
+#text_input{
+		background: url(../images/input_1_select.png) 8px 0 no-repeat;
+			padding: 65px 10px 0 10px;
+			color:#89d10b;
+			font-weight:bold;
+			margin-right:20px;
+}
+#file_input{
+		background: url(../images/input_2.png) 8px 0 no-repeat;
+			padding: 65px 10px 0 10px;
+			margin-right:20px;
+}
+#url_input{
+		background: url(../images/input_3.png) 8px 0 no-repeat;
+			padding: 65px 10px 0 10px;
+}
+.colors{
+	color:#ffffff;
 }
 #form textarea {
 	border: 1px solid #dadada;

@@ -12,8 +12,7 @@ body {
 	min-width:960px;
 	height: 100%;
 	min-height: 100%;
-	/*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/grey_wash_wall.png");*/
-	background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/grey_wash_wall.png) center 0 repeat #DBDDDC;
+	background: url(../images/grey_wash_wall.png) center 0 repeat #DBDDDC;
 	       -webkit-font-smoothing: antialiased;
 }
 
@@ -119,7 +118,14 @@ ul.list1 li {
 	margin-bottom: 21px;	
 }
 
-
+/*Option slider*/
+.right {
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: -1000px;
+}
 
 
 /*links*/

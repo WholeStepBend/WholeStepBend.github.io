@@ -1,0 +1,51 @@
+<html lang="en" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script src="http://code.jquery.com/jquery-1.4.2.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.js" type="text/javascript"></script>
+
+  <style type="text/css">
+    .colors {
+    color:Green;
+    background-color:#eee;
+    border:2px solid #333;
+    display:none;
+    text-align:justify;
+	width: 500px;
+}
+.colors p {
+    margin: 15px;
+    font-size: 0.917em;
+}
+
+  </style>
+  <title></title>
+
+<script type="text/javascript">//<![CDATA[
+$(document).ready(function() {
+    $('#url').hide();
+    $('#file').hide();
+        $('#colorselector').change(function(){
+            $('.colors').hide();
+            $('#' + $(this).val()).slideDown( "slow" );
+        });
+});
+//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  <select id="colorselector">
+   <option value="direct" >Direct</option>
+   <option value="url">URL</option>
+   <option value="file">File</option>
+</select>
+<div class="colors" id="url" style="display: none;"> url... <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p></div>
+<div class="colors" id="direct" style="display: block;"> direct.. <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p></div>
+<div class="colors" id="file" style="display: none;"> file.. <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p></div>
+</body>
+</html>
