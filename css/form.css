@@ -106,10 +106,53 @@ textarea.form-control {
 }
 #url_input{
 		background: url(../images/input_3.png) 8px 0 no-repeat;
+		
 			padding: 65px 10px 0 10px;
 }
 .colors{
 	color:#ffffff;
+    display:none;
+}
+#text{
+    display:block;
+}
+#inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+#inputfile + label{
+    background-color: #ffffff;
+    color:#4e4a4a;
+    border: 3px solid #ffffff;
+        max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    fill: #4e4a4a;
+
+}
+
+#inputfile + label svg{
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-top: -0.25em;
+    margin-right: 0.55em;
+}
+#inputfile + label:hover {
+    font-weight:900;
+    fill: #89d10b;
+    border: 3px solid #89d10b;
+
 }
 #form textarea {
 	border: 1px solid #dadada;
